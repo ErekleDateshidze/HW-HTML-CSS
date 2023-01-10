@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/checkout.css" />
   </head>
   <body>
-    <!-- <header>
+    <header>
       <div class="wrapper">
         <nav>
           <div class="menu-toggle">
@@ -60,24 +60,119 @@
           </ul>
         </div>
       </section>
-    </header> -->
+    </header>
     <!-- //////////////////////////////////////////// -->
 
     <main class="main">
-    <h4 class="input-header">Billing Details</h3>
-      <div class="checkout-form">
-        <form action="#" method="post" class="form-details">
-          <p>Name</p>
-          <input type="text" name="name" placeholder="Alexei Ward" />
-          <p>Email Adress</p>
-          <input type="text" name="email" placeholder="alexeiward@mail.com" />
-          <p>Phone Number</p>
-          <input type="text" name="phone" placeholder="+1 202-555-0136" />
-        </form>
+      !-- <a href="" class="goback-btn">Go Back</a>
+      <div class="container">
+        <div class="child">
+          <h3 class="page-header">CHECKOUT</h3>
+          <h3 class="input-header">BILLING DETAILS</h3>
+          <label< for="address">Name</label>
+          <input type="text" name="address" placeholder="Alexei Ward" />
+        </div>
+
+        <div class="child">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" placeholder="Alexei Ward" />
+        </div>
+
+        <div class="child">
+          <label for="phone">Phone number</label>
+          <input type="text" name="phone" placeholder="Alexei Ward" />
+        </div>
+
+        <div class="child">
+          <h3 class="input-header">SHIPPING DETAILS</h3>
+          <label for="address">Your Address</label>
+          <input
+            type="text"
+            name="address"
+            placeholder="1137 Williams Avenue"
+          />
+        </div>
+
+        <div class="child">
+          <label for="email">ZIP Code</label>
+          <input type="email" name="email" placeholder="10001" />
+        </div>
+
+        <div class="child">
+          <label for="phone">City</label>
+          <input type="text" name="phone" placeholder="New York" />
+        </div>
+
+        <div class="child">
+          <label for="phone">Country</label>
+          <input type="text" name="phone" placeholder="United States" />
+        </div>
+
+        <div class="radio-form">
+          <div class="formradio-group">
+            <h3 class="input-header">PAYMENT DETAILS</h3>
+            <label for="address" class="radio">Payment Method</label>
+            <input type="radio" id="small" name="size" class="formradio-input" />
+            <label for="small" class="formradio-label">
+            <span class="formradio-button"></span>
+            <span class="text">e-Money</span></label>
+        </div>
+
+         <div class="formradio-group">
+           <input type="radio" id="big" name="size" class="formradio-input" />
+           <label for="big" class="formradio-label">
+           <span class="formradio-button"></span>
+            <span class="text">e-Cash</span></label>
+          </div>
+
+          <div class="child">
+            <label for="phone">e-Money Number</label>
+            <input type="text" name="phone" placeholder="238521993" />
+          </div>
+          
+          <div class="child">
+            <label for="phone">e-money PIN</label>
+            <input type="text" name="phone" placeholder="6891" />
+          </div>
+      </div> -->
+
+      <!-- //////////////////////////////////////////// -->
+
+      <div class="summary-checkout">
+        <h3 class="h3-styling">Summary</h3>
+        <ul class="accessory-list">
+          <li>
+            <img src="../assets/checkout/item1.png" alt="" />
+            <p>
+              XX99<br />
+              <span>$ 2,999 </span>
+            </p>
+            <span class="count">1X</span>
+          </li>
+          <br />
+          <li>
+            <img src="../assets/checkout/item2.png" alt="" />
+            <p>
+              XX59<br />
+              <span>$ 899 </span>
+            </p>
+            <span class="count">2X</span>
+          </li>
+          <br />
+          <li>
+            <img src="../assets/checkout/item3.png" alt="" />
+            <p>
+              YX1<br />
+              <span>$ 599 </span>
+            </p>
+            <span class="count">1X</span>
+          </li>
+        </ul>
       </div>
+      ;
     </main>
 
-    <!-- <footer class="bottom-nav">
+    <footer class="bottom-nav">
       <section class="footer-nav">
         <svg
           class="company-logo"
@@ -150,6 +245,6 @@
           </li>
         </ul>
       </section>
-    </footer> -->
+    </footer>
   </body>
 </html>

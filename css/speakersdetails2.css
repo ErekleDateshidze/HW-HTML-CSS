@@ -26,9 +26,14 @@
   height: auto;
 } */
 
+.goback-btn {
+  display: flex;
+  margin: 3rem 0 0 2rem;
+  color: #979797;
+}
+
 header {
   background-color: var(--mainColor);
-  position: fixed;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -48,17 +53,13 @@ nav {
 }
 
 /* /////////////////////// */
-.go-back-btn {
-  font-size: 24px;
-  color: black;
-}
 
 .mark2-headphones-promotion {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .mark-2-container {
