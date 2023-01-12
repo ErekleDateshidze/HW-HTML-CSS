@@ -52,6 +52,44 @@ nav {
   display: none;
 }
 
+.desktop-nav-list {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .brand {
+    display: flex;
+  }
+
+  nav {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1000px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  nav {
+    justify-content: space-around;
+  }
+
+  .desktop-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    list-style: none;
+    gap: 2rem;
+  }
+
+  .desktop-nav-list a {
+    color: white;
+  }
+}
+
 /* /////////////////////// */
 
 .mark2-headphones-promotion {
@@ -144,6 +182,55 @@ nav {
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .mark2-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* margin: 0 2rem 0 2rem; */
+    gap: 5rem;
+  }
+
+  .mark-2-container {
+    width: 17.6rem;
+    height: 30rem;
+    margin-left: 5rem;
+  }
+
+  .mark2-content {
+    width: 17.6rem;
+    height: 30rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .mark2-content p {
+    width: 28rem;
+  }
+
+  .banner-action-btn {
+    margin: -8rem 0 0 0;
+  }
+
+  .price {
+    margin: 0rem 0 0 0;
+  }
+
+  .mark2-content h3 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .mark-2-container {
+    width: 34rem;
+    height: 36rem;
+    margin-left: 20rem;
+  }
+}
+
 /* /////////////////////// */
 .features h3 {
   font-size: 24px;
@@ -163,6 +250,55 @@ nav {
   font-weight: 400 bold;
   opacity: 0.5;
   padding-top: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .features {
+    margin: 0 0 0 3rem;
+  }
+
+  .in-the-box {
+    width: 90%;
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-direction: row;
+    margin: 4rem 0 0 2rem;
+    gap: 20rem;
+  }
+
+  .in-the-box h3 {
+    margin: 1.75rem 0 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .features {
+    margin: 0 0 0 3rem;
+  }
+
+  .features-main {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    margin-left: 15rem;
+  }
+
+  .features-content p {
+    width: 40rem;
+  }
+
+  .in-the-box {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0rem 0 0 0rem;
+    gap: 0rem;
+  }
+
+  .in-the-box h3 {
+    margin: 0rem 0 0 0rem;
+  }
 }
 
 /* /////////////////////// */
@@ -191,6 +327,55 @@ nav {
   font-weight: bold;
   color: var(--seconday);
   margin-right: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .features {
+    margin: 0 0 0 3rem;
+  }
+
+  .in-the-box {
+    width: 90%;
+    display: flex;
+    /* justify-content: flex-start; */
+    flex-direction: row;
+    margin: 4rem 0 0 2rem;
+    gap: 20rem;
+  }
+
+  .in-the-box h3 {
+    margin: 1.75rem 0 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .features {
+    margin: 0 0 0 3rem;
+  }
+
+  .features-main {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    margin-left: 15rem;
+  }
+
+  .features-content p {
+    width: 40rem;
+  }
+
+  .in-the-box {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0rem 0 0 0rem;
+    gap: 0rem;
+  }
+
+  .in-the-box h3 {
+    margin: 0rem 0 0 0rem;
+  }
 }
 
 /* /////////////////////// */
@@ -251,6 +436,51 @@ nav {
   background-size: cover;
   border-radius: 10px;
   transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .collage-grid-container {
+    max-width: 700px;
+
+    display: grid;
+    grid-template-columns: 0.5fr 0.7fr;
+    grid-template-rows: 0.4fr 0.4fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-template-areas: "img-1 img-3" "img-2 img-3";
+  }
+
+  .collage-grid-container .image-1-container {
+    max-width: 277px;
+  }
+
+  .collage-grid-container .image-2-container {
+    max-width: 277px;
+  }
+
+  .collage-grid-container .image-3-container {
+    max-width: 395px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .collage-grid-container {
+    max-width: 1100px;
+  }
+  .collage-grid-container .image-1-container {
+    max-width: 445px;
+    height: 280px;
+  }
+
+  .collage-grid-container .image-2-container {
+    max-width: 445px;
+    height: 280px;
+  }
+
+  .collage-grid-container .image-3-container {
+    max-width: 635px;
+    height: 565px;
+  }
 }
 
 /* /////////////////////// */
@@ -377,6 +607,20 @@ nav {
   transform: translate(50%, -50%);
 }
 
+.mark-3-headphones-product {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.zx-9-headphones-product {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
 .mark1-content-product p {
   font-size: 15px;
   letter-spacing: 3px;
@@ -390,6 +634,62 @@ nav {
   justify-content: center;
   align-items: center;
   margin-top: 3.125rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .also-like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93%;
+    margin-left: 1.5rem;
+  }
+
+  .also-like-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img_container_product {
+    width: 16rem;
+    height: 20rem;
+  }
+
+  .img_container_product .mark-1-headphones-product {
+    content: url("../assets/shared/tablet/mark1.png");
+  }
+
+  .img_container_product .mark-3-headphones-product {
+    content: url("../assets/shared/tablet/mark3.png");
+  }
+
+  .img_container_product .zx-9-headphones-product {
+    content: url("../assets/shared/tablet/zx9.png");
+  }
+
+  .also-like-h3-styling {
+    font-size: 32px;
+  }
+
+  .mark1-content-product {
+    margin-left: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .products {
+    margin-left: 3rem;
+  }
+  .img_container {
+    display: flex;
+    justify-content: space-between;
+    width: 22rem;
+  }
+
+  .img_container_product {
+    width: 18rem;
+    height: 20rem;
+  }
 }
 
 /* /////////////////////// */
@@ -425,6 +725,27 @@ nav {
   border: none;
   color: var(--linecolor);
   background-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93%;
+    margin-left: 1.5rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .products {
+    margin-left: 3rem;
+  }
+  .img_container {
+    display: flex;
+    justify-content: space-between;
+    width: 22rem;
+  }
 }
 
 /* /////////////////////// */
@@ -474,6 +795,50 @@ nav {
 
 .company-desc .h2-styling-title {
   color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  .company-desc .company-desc-image {
+    background-image: url("../assets/shared/tablet/image-best-gear.jpg");
+  }
+  .company-desc .h2-styling-title {
+    font-size: 40px;
+  }
+  .company-desc .company-desc-text .desc-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .company-desc {
+    width: 63rem;
+    height: 490px;
+    flex-direction: row-reverse;
+    margin-bottom: 10rem;
+  }
+
+  .company-desc .company-desc-image {
+    width: 40%;
+    height: 100%;
+    background-image: url("../assets/shared/desktop/image-best-gear.jpg");
+  }
+
+  .company-desc .company-desc-text {
+    width: 49%;
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .h2-styling-title {
+    width: 400px;
+    text-align: left;
+    margin: 0;
+  }
+
+  .company-desc .company-desc-text .desc-text {
+    max-width: 400px;
+    text-align: left;
+  }
 }
 
 /* /////////////////////// */
@@ -579,4 +944,80 @@ nav {
 
 .copyright {
   margin-top: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .bottom-nav {
+    height: 400px;
+  }
+  .bottom-nav .accent-bar {
+    top: 0;
+    left: 30px;
+    transform: none;
+  }
+
+  .bottom-nav .footer-nav {
+    height: 40%;
+    align-items: flex-start;
+  }
+
+  .bottom-nav .footer-nav svg {
+    margin: 25px 0px 30px 30px;
+  }
+
+  .bottom-nav .footer-nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .bottom-nav .footer-nav ul li {
+    margin: 0 30px;
+  }
+
+  .bottom-nav .footer-comp-desc {
+    height: 50%;
+    align-items: flex-start;
+  }
+  .bottom-nav .footer-comp-desc .comp-desc {
+    text-align: left;
+    max-width: 700px;
+    margin: 0;
+    padding-left: 30px;
+  }
+  .bottom-nav .footer-comp-desc .copyright {
+    padding-left: 30px;
+  }
+
+  .bottom-nav .footer-comp-desc .social-media {
+    right: 50px;
+    bottom: 7px;
+    transform: none;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bottom-nav .accent-bar {
+    left: 120px;
+  }
+  .bottom-nav .footer-nav {
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+  }
+  .bottom-nav .footer-nav svg {
+    margin: 0;
+  }
+
+  .bottom-nav .footer-comp-desc .comp-desc {
+    max-width: 570px;
+    padding-left: 30px;
+  }
+
+  .social-media {
+    padding-left: 55rem;
+  }
 }

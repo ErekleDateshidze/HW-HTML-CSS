@@ -99,7 +99,10 @@ nav {
 @media only screen and (min-width: 768px) {
   .brand {
     display: flex;
-    margin-right: 500px;
+  }
+
+  nav {
+    justify-content: space-around;
   }
 
   .banner {
@@ -123,6 +126,10 @@ nav {
     display: none;
   }
 
+  nav {
+    justify-content: space-around;
+  }
+
   .desktop-nav-list {
     display: flex;
     justify-content: center;
@@ -130,9 +137,16 @@ nav {
     width: 100%;
     max-width: 500px;
     list-style: none;
+    gap: 2rem;
+  }
+
+  .desktop-nav-list a {
+    color: white;
   }
 
   .banner {
+    display: flex;
+    justify-content: space-around;
     background: url(assets/home/desktop/image-hero.jpg) no-repeat;
     background-size: cover;
     background-position: center;
@@ -143,10 +157,11 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-top: 15rem;
   }
 
   .banner-content .banner-h3 {
-    width: 40%;
+    width: 70%;
     font-size: 3.5rem;
   }
 
@@ -392,7 +407,7 @@ nav {
 
 @media only screen and (min-width: 1000px) {
   .zx7-speaker-promotion {
-    max-width: 1200px;
+    max-width: 63rem;
     background-image: url("/assets/home/desktop/image-speaker-zx7.jpg");
   }
 
@@ -457,6 +472,7 @@ nav {
 
 @media only screen and (min-width: 768px) {
   .yx1-earphones-promotion {
+    width: 63rem;
     display: flex;
     flex-direction: row;
     gap: 25px;
@@ -543,6 +559,7 @@ nav {
 
 @media (min-width: 1000px) {
   .company-desc {
+    width: 63rem;
     height: 490px;
     flex-direction: row-reverse;
     margin-bottom: 10rem;
