@@ -42,8 +42,54 @@ nav {
   justify-content: space-between;
 }
 
-.sub-nav {
+.close-btn {
   display: none;
+}
+
+.subnav {
+  position: absolute;
+  background-color: var(--white);
+  width: 100%;
+  height: 40rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.img_container-menu {
+  margin: 5rem 0 2rem 1.5rem;
+  width: 70%;
+  border-radius: 8px;
+  position: relative;
+  height: 10rem;
+  background-color: #f1f1f1;
+}
+
+.mark-2-headphones-menu {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -130%);
+}
+
+.headphones-menu {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -91%);
+}
+
+.btn-shop-menu {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, 120%);
+  border: none;
+  color: var(--linecolor);
+  background-color: transparent;
 }
 
 /* <!-- ///////////////////////// --> */
@@ -119,6 +165,10 @@ nav {
   .banner-content .banner-p {
     font-size: 15px;
   }
+
+  .subnav {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -168,6 +218,10 @@ nav {
   .banner-content .banner-p {
     width: 50%;
     font-size: 15px;
+  }
+
+  .subnav {
+    display: none;
   }
 }
 
