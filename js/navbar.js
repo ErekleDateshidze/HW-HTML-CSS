@@ -1,6 +1,5 @@
 const menuitems = document.getElementById("submenu");
 const hamburgermenu = document.getElementById("menubutton");
-const closebutton = document.getElementById("closebtn");
 
 hamburgermenu.addEventListener("click", () => {
   if (menuitems.style.display === "none") {
@@ -10,15 +9,13 @@ hamburgermenu.addEventListener("click", () => {
   }
 });
 
-// hamburgermenu.addEventListener("click", () => {
-//   menuitems.style.display = "flex";
-//   hamburgermenu.style.display = "none";
-//   closebutton.style.display = "inline-block";
-// });
+const cartitems = document.getElementById("subcart");
+const cartbtn = document.getElementById("cartbutton");
 
-// // Close menu
-// closebutton.addEventListener("click", () => {
-//   menuitems.style.display = "none";
-//   hamburgermenu.style.display = "flex";
-//   closebutton.style.display = "none";
-// });
+cartbtn.addEventListener("click", () => {
+  if (cartitems.style.display === "none") {
+    cartitems.style.display = "flex";
+  } else {
+    cartitems.style.display = "none";
+  }
+});

@@ -11,7 +11,7 @@
     <header>
       <div class="wrapper">
         <nav>
-          <div class="menu-toggle">
+          <div class="menu-toggle" id="menubutton">
             <span class="ti-menu">
               <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
                 <g fill="#FFF" fill-rule="evenodd">
@@ -53,7 +53,7 @@
               </ul>
           </div>
 
-          <div class="cart">
+          <div class="cart" id="cartbutton">
             <span class="ti-shopping-cart">
               <svg width="23" height="20" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -66,6 +66,120 @@
           </div>
         </nav>
       </div>
+
+      
+      <section class="subcart" id="subcart">
+         <div class="summary-main">
+            <div class="cart-header">
+              <h3 class="summary-h3-styling">Cart(3)</h3>
+              <h4 class="removeall"> Remove all</h3>
+            </div>
+            <div class="summary-container">
+                <img src="../assets/checkout/item1.png" alt="" />
+                <div class="summary-description">
+                    <div class="product-description">
+                      <span class="checkout-header">XX99</span>
+                      <span class="checkout-price">$ 2,999</span>
+                  </div>
+                    <div class="quantity">
+                        <a href="" class="btn-count">- 1 + </a> 
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="summary-container">
+            <img src="../assets/checkout/item2.png" alt="" />
+            <div class="summary-description">
+                <div class="product-description">
+                  <span class="checkout-header">XX59</span>
+                  <span class="checkout-price">$ 899 </span>
+              </div>
+                <div class="quantity">
+                  <a href="" class="btn-count">- 1 + </a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="summary-container">
+            <img src="../assets/checkout/item3.png" alt="" />
+            <div class="summary-description">
+                <div class="product-description">
+                  <span class="checkout-header">YX1</span>
+                  <span class="checkout-price">$ 599 </span>
+              </div>
+                <div class="quantity">
+                  <a href="" class="btn-count">- 1 + </a> 
+                </div>
+            </div>
+        </div>
+
+      
+           <div class="summary-container">
+              <div class="summary-description-2">
+                  <div class="product-description">
+                    <span class="checkout-price">GRAND TOTAL</span>
+                </div>
+                  <div class="price-2">
+                    $ 5,446
+                  </div>
+              </div>
+            </div>
+
+             <div class="summary-container">
+            <div class="summary-description-2">
+                <div class="product-description">
+                  <a href="" class="checkout-btn">CONTINUE & PAY</a>
+              </div>
+            </div>
+      </section>
+
+
+
+      <section class="subnav" id="submenu">
+          <div class="img_container-menu">
+            <img
+              src="../assets/home/mobile/image-removebg-preview(41).png"
+              alt="mark 2 headphones"
+              class="mark-2-headphones-menu"
+            />
+            <h3 class="headphones">HEADPHONES</h3>
+            <a href="../html/headphones.html" class="btn-shop-menu">SHOP
+              <span
+                    ><img src="../assets/home/mobile/Path 2.svg" alt="right arrow"
+                  /></span>
+            </a>
+		      </div>
+
+          <div class="img_container-menu">
+          <img
+            src="../assets/home/mobile/image-removebg-preview(38).png"
+            alt="mark 2 headphones"
+            class="mark-2-headphones-menu"
+          />
+          <h3 class="headphones">SPEAKERS</h3>
+          <a href="../html/speakers.html" class="btn-shop-menu">SHOP
+            <span
+                  ><img src="../assets/home/mobile/Path 2.svg" alt="right arrow"
+                /></span>
+          </a>
+		    </div>
+
+         <div class="img_container-menu">
+          <img
+            src="../assets/home/mobile/image-removebg-preview(42).png"
+            alt="mark 2 headphones"
+            class="mark-2-headphones-menu"
+          />
+          <h3 class="headphones">EARPHONES</h3>
+          <a href="../html/earphones.html" class="btn-shop-menu">SHOP
+            <span
+                  ><img src="../assets/home/mobile/Path 2.svg" alt="right arrow"
+                /></span>
+          </a>
+		    </div>
+      </section>
+
     </header>
     <!-- //////////////////////////////////////////// -->
 
@@ -314,6 +428,6 @@
         </ul>
       </section>
     </footer>
-   
+    <script src="../js/navbar.js"></script>
   </body>
 </html>
