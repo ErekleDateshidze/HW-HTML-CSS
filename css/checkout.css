@@ -296,6 +296,7 @@ nav {
 
 .input-header {
   font-size: 13px;
+  font-weight: bold;
   color: var(--seconday);
   margin: 2rem 0 1.5rem 0;
 }
@@ -329,6 +330,69 @@ nav {
   display: inline-block;
   color: black;
   font-weight: 700;
+}
+
+.child-email {
+  /* border: 2px solid green; */
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.child-email input {
+  outline: transparent solid 2px;
+  border: 1px solid #cfcfcf;
+  width: 100%;
+  border-radius: 8px;
+  padding: 16px 0 16px 16px;
+  transition: all 0.1s ease;
+}
+
+.child-email input:focus {
+  border: 2px solid #d87d4a;
+}
+
+.child-email input:invalid {
+  border: 1px solid red;
+}
+
+.child-email > label {
+  margin-bottom: 8px;
+  font-size: 12px;
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    justify-content: center;
+  }
+  .name-adress {
+    display: flex;
+    align-items: center;
+  }
+  .child-email {
+    margin-top: 7.7rem;
+  }
+  .child-email input {
+    width: 20rem;
+  }
+
+  .child .name {
+    width: 20rem;
+  }
+
+  .child .phone {
+    width: 20rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* body {
+    background-color: blueviolet;
+  } */
 }
 
 /* /////////////////////// */

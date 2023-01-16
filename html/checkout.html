@@ -181,47 +181,58 @@
       </section>
 
     </header>
+
     <!-- //////////////////////////////////////////// -->
 
     <main class="main">
       <a href="" class="goback-btn">Go Back</a>
       <div class="container">
-        <div class="child">
-          <h3 class="page-header">CHECKOUT</h3>
-          <h3 class="input-header">BILLING DETAILS</h3>
-          <label< for="address">Name</label>
-          <input type="text" name="address" placeholder="Alexei Ward" />
+        <div class="input-billing">
+          <div class="name-adress">
+            <div class="child">
+              <h3 class="page-header">CHECKOUT</h3>
+              <h3 class="input-header">BILLING DETAILS</h3>
+              <label for="address">Name</label>
+              <input class="name" type="text" name="address" placeholder="Alexei Ward" />
+            </div>
+
+            <div class="child-email">
+              <label for="email">Email Address</label>
+              <input class="email" type="email" name="email" placeholder="Alexei Ward" />
+            </div>
+          </div>
+
+          <div class="child">
+            <label for="phone">Phone number</label>
+            <input class="phone" type="text" name="phone" placeholder="Alexei Ward" />
+          </div>
         </div>
 
-        <div class="child">
-          <label for="email">Email Address</label>
-          <input type="email" name="email" placeholder="Alexei Ward" />
-        </div>
 
-        <div class="child">
-          <label for="phone">Phone number</label>
-          <input type="text" name="phone" placeholder="Alexei Ward" />
-        </div>
 
         <div class="child">
           <h3 class="input-header">SHIPPING DETAILS</h3>
           <label for="address">Your Address</label>
           <input
+            class="your-adress"
             type="text"
             name="address"
             placeholder="1137 Williams Avenue"
           />
         </div>
 
-        <div class="child">
-          <label for="email">ZIP Code</label>
-          <input type="email" name="email" placeholder="10001" />
-        </div>
+        <div class="code-city">  
+          <div class="child">
+            <label for="email">ZIP Code</label>
+            <input type="email" name="email" placeholder="10001" />
+          </div>
 
-        <div class="child">
-          <label for="phone">City</label>
-          <input type="text" name="phone" placeholder="New York" />
+          <div class="child">
+            <label for="phone">City</label>
+            <input type="text" name="phone" placeholder="New York" />
+          </div>
         </div>
+      
 
         <div class="child">
           <label for="phone">Country</label>

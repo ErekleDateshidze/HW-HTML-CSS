@@ -43,6 +43,27 @@ nav {
 }
 
 /* <!-- //////////Cart Button/////////////// --> */
+/* 
+#subcart {
+  position: fixed;
+  display: none;
+  width: 85%;
+  border-radius: 10px;
+  height: 35rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+  z-index: 2;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1rem;
+  overflow: hidden;
+  gap: 1rem;
+  margin: 2rem;
+} */
 
 .subcart {
   position: absolute;
